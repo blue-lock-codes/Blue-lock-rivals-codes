@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobloxCodes 2025 - Codes de jeux Roblox gratuits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Variables CSS */
+        :root {
+            --primary-color: #ff4754;
+            --secondary-color: #2d3748;
+            --accent-color: #4299e1;
+            --light-bg: #f7fafc;
+            --dark-bg: #1a202c;
+            --text-color: #2d3748;
+            --light-text: #f7fafc;
+            --border-radius: 8px;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Reset et styles de base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-align: center;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #e03e49;
+            transform: translateY(-2px);
+        }
+
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ff4754 0%, #ff6b6b 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="%23ffffff" opacity="0.1"><polygon points="1000,100 1000,0 0,100"></polygon></svg>');
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            position: relative;
+        }
+
+        /* Section de codes */
+        .codes-section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #718096;
+            font-size: 1.1rem;
+        }
+
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        .codes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .code-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .code-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image {
+            height: 180px;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--secondary-color);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .card-description {
+            color: #718096;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .code-container {
+            background-color: var(--light-bg);
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .code-text {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .copy-btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .copy-btn:hover {
+            background-color: #3182ce;
+        }
+
+        .expiry-date {
+            font-size: 0.85rem;
+            color: #a0aec0;
+        }
+
+        .new-badge {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Section de tutoriels */
+        .tutorials-section {
+            background-color: var(--light-bg);
+            padding: 60px 0;
+        }
+
+        .tutorials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+        }
+
+        .tutorial-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .tutorial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .tutorial-image {
+            height: 200px;
+            background-color: #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+        }
+
+        .tutorial-content {
+            padding: 20px;
+        }
+
+        .tutorial-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .tutorial-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #718096;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        /* Section newsletter */
+        .newsletter-section {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 20px auto 0;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            border-radius: var(--border-radius) 0 0 var(--border-radius);
+            font-size: 1rem;
+        }
+
+        .newsletter-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0 25px;
+            border-radius: 0 var(--border-radius) var(--border-radius) 0;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .newsletter-btn:hover {
+            background-color: #e03e49;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: var(--light-text);
+            padding: 50px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #a0aec0;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #a0aec0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-input {
+                border-radius: var(--border-radius);
+                margin-bottom: 10px;
+            }
+
+            .newsletter-btn {
+                border-radius: var(--border-radius);
+                padding: 12px;
+            }
+        }
+
+        /* Animation pour les nouveaux codes */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .new-code {
+            animation: pulse 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Roblox<span>Codes</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#codes">Codes Novembre 2025</a></li>
+                    <li><a href="#tutoriels">Articles 2025</a></li>
+                    <li><a href="#jeux">Jeux populaires</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Codes Roblox Novembre 2025</h1>
+            <p>Découvrez les tout derniers codes de jeux Roblox pour des récompenses exclusives. Tous les codes sont actifs en novembre 2025 !</p>
+            <a href="#codes" class="btn">Voir les nouveaux codes</a>
+        </div>
+    </section>
+
+    <!-- Section des codes -->
+    <section id="codes" class="codes-section">
+        <div class="container">
+            <h2 class="section-title">Codes Roblox actifs - Novembre 2025</h2>
+            <p class="section-subtitle">Tous ces codes ont été vérifiés et sont actifs ce mois-ci</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active">Tous les jeux</button>
+                <button class="filter-btn">Nouveaux codes</button>
+                <button class="filter-btn">Populaires</button>
+                <button class="filter-btn">Expirant bientôt</button>
+            </div>
+            <div class="codes-grid">
+                <!-- Code 1 -->
+                <div class="code-card new-code">
+                    <div class="card-image">🎮</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Blox Fruits <span class="new-badge">NOUVEAU</span></h3>
+                        <p class="card-description">Fruits légendaires et boosts d'expérience exclusifs</p>
+                        <div class="code-container">
+                            <span class="code-text">NOV25UPDATE</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <div class="code-container">
+                            <span class="code-text">FRUITLEGEND25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 30/11/2025</p>
+                    </div>
+                </div>
+                <!-- Code 2 -->
+                <div class="code-card new-code">
+                    <div class="card-image">🏰</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Adopt Me! <span class="new-badge">NOUVEAU</span></h3>
+                        <p class="card-description">Animaux mythiques et maisons exclusives</p>
+                        <div class="code-container">
+                            <span class="code-text">ADOPTNOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <div class="code-container">
+                            <span class="code-text">MYTHIC2025</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 25/11/2025</p>
+                    </div>
+                </div>
+                <!-- Code 3 -->
+                <div class="code-card new-code">
+                    <div class="card-image">⚔️</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Arsenal <span class="new-badge">NOUVEAU</span></h3>
+                        <p class="card-description">Skins d'armes futuristes et personnages exclusifs</p>
+                        <div class="code-container">
+                            <span class="code-text">ARSENALNOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <div class="code-container">
+                            <span class="code-text">FUTUREGUN25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 28/11/2025</p>
+                    </div>
+                </div>
+                <!-- Code 4 -->
+                <div class="code-card">
+                    <div class="card-image">🏎️</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Vehicle Legends</h3>
+                        <p class="card-description">Véhicules de luxe et pièces de performance</p>
+                        <div class="code-container">
+                            <span class="code-text">VEHICLENOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <div class="code-container">
+                            <span class="code-text">SPEED2025</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 15/12/2025</p>
+                    </div>
+                </div>
+                <!-- Code 5 -->
+                <div class="code-card new-code">
+                    <div class="card-image">🧟</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Zombie Uprising <span class="new-badge">NOUVEAU</span></h3>
+                        <p class="card-description">Armes rares et équipements de survie</p>
+                        <div class="code-container">
+                            <span class="code-text">ZOMBIENOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <div class="code-container">
+                            <span class="code-text">SURVIVE2025</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 20/11/2025</p>
+                    </div>
+                </div>
+                <!-- Code 6 -->
+                <div class="code-card">
+                    <div class="card-image">🏀</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Hoops Life</h3>
+                        <p class="card-description">Équipements légendaires et animations exclusives</p>
+                        <div class="code-container">
+                            <span class="code-text">HOOPSNOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <div class="code-container">
+                            <span class="code-text">DUNK2025</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 10/12/2025</p>
+                    </div>
+                </div>
+                <!-- Code 7 -->
+                <div class="code-card new-code">
+                    <div class="card-image">👻</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Brookhaven RP <span class="new-badge">NOUVEAU</span></h3>
+                        <p class="card-description">Maisons et véhicules exclusifs</p>
+                        <div class="code-container">
+                            <span class="code-text">BROOKNOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 30/11/2025</p>
+                    </div>
+                </div>
+                <!-- Code 8 -->
+                <div class="code-card">
+                    <div class="card-image">🐉</div>
+                    <div class="card-content">
+                        <h3 class="card-title">Dragon Adventures</h3>
+                        <p class="card-description">Dragons rares et habitats exclusifs</p>
+                        <div class="code-container">
+                            <span class="code-text">DRAGONNOV25</span>
+                            <button class="copy-btn">Copier</button>
+                        </div>
+                        <p class="expiry-date">Expire le: 05/12/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des tutoriels -->
+    <section id="tutoriels" class="tutorials-section">
+        <div class="container">
+            <h2 class="section-title">Articles et Tutoriels 2025</h2>
+            <p class="section-subtitle">Découvrez les dernières actualités et guides Roblox</p>
+            <div class="tutorials-grid">
+                <!-- Tutoriel 1 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">📺</div>
+                    <div class="tutorial-content">
+                        <h3 class="tutorial-title">Guide: Comment utiliser les codes Roblox en 2025</h3>
+                        <div class="tutorial-meta">
+                            <span>Par: Alex Tech</span>
+                            <span>8 min de lecture</span>
+                        </div>
+                        <p>Découvrez les nouvelles méthodes pour échanger vos codes dans l'interface mise à jour de Roblox.</p>
+                    </div>
+                </div>
+                <!-- Tutoriel 2 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">📺</div>
+                    <div class="tutorial-content">
+                        <h3 class="tutorial-title">Top 10 des jeux Roblox 2025</h3>
+                        <div class="tutorial-meta">
+                            <span>Par: Sarah Gameur</span>
+                            <span>12 min de lecture</span>
+                        </div>
+                        <p>Notre sélection des jeux les plus populaires et innovants de cette année avec leurs codes actifs.</p>
+                    </div>
+                </div>
+                <!-- Tutoriel 3 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">📺</div>
+                    <div class="tutorial-content">
+                        <h3 class="tutorial-title">Nouveautés Roblox Studio 2025</h3>
+                        <div class="tutorial-meta">
+                            <span>Par: Marcus Dev</span>
+                            <span>15 min de lecture</span>
+                        </div>
+                        <p>Toutes les nouvelles fonctionnalités pour créer des jeux encore plus impressionnants.</p>
+                    </div>
+                </div>
+                <!-- Tutoriel 4 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">📺</div>
+                    <div class="tutorial-content">
+                        <h3 class="tutorial-title">Les tendances gaming Roblox 2025</h3>
+                        <div class="tutorial-meta">
+                            <span>Par: Tech Advisor</span>
+                            <span>6 min de lecture</span>
+                        </div>
+                        <p>Décryptage des nouvelles tendances qui dominent la plateforme cette année.</p>
+                    </div>
+                </div>
+                <!-- Tutoriel 5 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">📺</div>
+                    <div class="tutorial-content">
+                        <h3 class="tutorial-title">Sécurité Roblox 2025: Protégez votre compte</h3>
+                        <div class="tutorial-meta">
+                            <span>Par: Security Pro</span>
+                            <span>10 min de lecture</span>
+                        </div>
+                        <p>Les meilleures pratiques pour sécuriser votre compte Roblox avec les nouvelles menaces de 2025.</p>
+                    </div>
+                </div>
+                <!-- Tutoriel 6 -->
+                <div class="tutorial-card">
+                    <div class="tutorial-image">📺</div>
+                    <div class="tutorial-content">
+                        <h3 class="tutorial-title">L'avenir du métaverse Roblox</h3>
+                        <div class="tutorial-meta">
+                            <span>Par: Future Analyst</span>
+                            <span>11 min de lecture</span>
+                        </div>
+                        <p>Quelles sont les tendances et évolutions prévues pour Roblox dans les prochaines années.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Ne manquez aucun code en 2025!</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir les nouveaux codes de novembre 2025 directement dans votre boîte mail.</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Votre adresse email" required>
+                    <button type="submit" class="newsletter-btn">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>RobloxCodes 2025</h3>
+                    <p>Votre source principale pour les codes de jeux Roblox gratuits en 2025.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#codes">Codes Novembre 2025</a></li>
+                        <li><a href="#tutoriels">Articles 2025</a></li>
+                        <li><a href="#jeux">Jeux populaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Catégories 2025</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Jeux d'aventure</a></li>
+                        <li><a href="#">Jeux de simulation</a></li>
+                        <li><a href="#">Jeux de rôle</a></li>
+                        <li><a href="#">Jeux de combat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact 2025</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:contact2025@robloxcodes.com">contact2025@robloxcodes.com</a></li>
+                        <li><a href="#">Formulaire de contact</a></li>
+                        <li><a href="#">Signaler un code expiré</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 RobloxCodes. Tous droits réservés. Ce site n'est pas affilié à Roblox Corporation.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fonctionnalité de copie des codes
+        document.querySelectorAll('.copy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const code = this.parentElement.querySelector('.code-text').textContent;
+                navigator.clipboard.writeText(code).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = 'Copié!';
+                    this.style.backgroundColor = '#48bb78';
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.backgroundColor = '';
+                    }, 2000);
+                });
+            });
+        });
+
+        // Filtrage des codes
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Simulation du filtrage
+                const codesSection = document.querySelector('.codes-section');
+                codesSection.style.opacity = '0.7';
+                
+                setTimeout(() => {
+                    codesSection.style.opacity = '1';
+                    
+                    // Animation des cartes
+                    document.querySelectorAll('.code-card').forEach((card, index) => {
+                        card.style.animation = `fadeIn 0.5s ease ${index * 0.1}s forwards`;
+                    });
+                }, 300);
+            });
+        });
+
+        // Menu mobile
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '70px';
+                navLinks.style.right = '20px';
+                navLinks.style.background = 'white';
+                navLinks.style.padding = '20px';
+                navLinks.style.borderRadius = '8px';
+                navLinks.style.boxShadow = '0 5px 15px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Animation au défilement
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Animation d'apparition des éléments
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observer les cartes de code
+        document.querySelectorAll('.code-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+
+        // Observer les cartes de tutoriel
+        document.querySelectorAll('.tutorial-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
